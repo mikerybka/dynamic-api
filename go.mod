@@ -1,4 +1,4 @@
-module github.com/mikerybka/dynamic-app
+module github.com/mikerybka/dynamic-api
 
 go 1.23.4
 

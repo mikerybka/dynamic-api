@@ -19,7 +19,7 @@ func requireEnvVar(name string) string {
 }
 
 func main() {
-	app := &brass.App{
+	app := &brass.API{
 		DataDir: requireEnvVar("DATA_DIR"),
 		SrcDir:  requireEnvVar("SRC_DIR"),
 	}
