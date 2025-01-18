@@ -3,8 +3,6 @@ FROM alpine:latest
 RUN apk update
 RUN apk add go
 
-COPY . /app
-WORKDIR /app
-RUN go build -o /bin/app main.go
+RUN go install github.com/mikerybka/brass/cmd/api@latest
 
-ENTRYPOINT ["/bin/app"]
+ENTRYPOINT ["/root/go/bin/api"]
